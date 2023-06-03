@@ -1,0 +1,30 @@
+<html>
+  <head>
+	<title>Color Me App By KM</title>
+	<style>
+		*{font-size:90px;}
+		body{background-color:lightblue;}
+	</style>
+		<script>
+			function cc()
+			{
+				event.preventDefault();
+				let colors=["red", "yellow", "pink", "green", "blue",]
+				let r =parseInt(Math.random()*colors.length);
+				document.body.style.backgroundColor=colors[r];
+			}
+		</script>
+
+ </head>
+	<body>
+		<center>
+		<h1>COLOR ME APP</h1>
+		<form onsubmit="cc()">
+		<input type="submit"value="Mohhe Rang De"/>
+		</form>
+		</center>
+	</body>
+
+
+
+</html>
